@@ -268,7 +268,7 @@ header {
   margin-bottom: 40px;      /* снизу убираем, сетку выровняем через gap */
   display: flex;
   flex-direction: column;
-  gap: 16px;            /* расстояние между заголовком, адресом и картой */
+  gap: 0px;            /* расстояние между заголовком, адресом и картой */
 }
 .location-text {
   color: var(--color-muted);
