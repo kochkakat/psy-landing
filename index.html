@@ -41,19 +41,24 @@
     <section class="hero" id="hero">
       <div class="container hero-inner">
         <div class="hero-content">
-          <div class="badge badge-accent">Психолог · Коуч · Астро-коуч</div>
-          <h1 class="hero-title">
-            Помогаю разобраться в себе, найти опору и ресурс: психология, коучинг, астрологические ориентиры<br />
-            <span class="hero-subtitle">Безопасное пространство и понятные шаги к результату</span>
-          </h1>
-          <p class="hero-description">
-            Короткий текст про подход: что ты делаешь и для кого. 1–2 предложения.
-          </p>
+          <!-- Бейдж: пустой, текст подставится из JS -->
+          <div class="badge badge-accent" id="hero-badge"></div>
+    
+          <!-- Заголовок: только заголовок, без подзаголовка внутри -->
+          <h1 class="hero-title"></h1>
+    
+          <!-- Подзаголовок: теперь отдельный блок, поэтому отступ после заголовка сработает правильно -->
+          <p class="hero-subtitle"></p>
+    
+          <!-- Описание: отдельный блок -->
+          <p class="hero-description"></p>
+    
           <div class="hero-buttons">
-            <button class="btn btn-primary" data-action="open-form">Начать работу</button>
-            <a href="#about" class="btn btn-outline">Узнать больше</a>
+            <button class="btn btn-primary" data-action="open-form"></button>
+            <a href="#about" class="btn btn-outline"></a>
           </div>
         </div>
+    
         <div class="hero-image-wrapper">
           <img
             src="photo.jpg"
