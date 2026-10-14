@@ -139,7 +139,7 @@ header {
   color: var(--color-accent);
   font-size: 22px;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 .hero-description {
   color: var(--color-muted);
@@ -280,10 +280,12 @@ header {
   padding: 0 16px;
 }
 
-/* На мобильных устройствах — одна колонка */
+/* Мобильная адаптация Hero: одна колонка, фото снизу */
 @media (max-width: 768px) {
-  .contacts-grid {
-    grid-template-columns: 1fr;
+  .hero-inner {
+    display: flex;
+    flex-direction: column;       /* ← текст сверху, фото снизу */
+    gap: 32px;                   /* расстояние между ними на мобильном */
   }
 }
 
