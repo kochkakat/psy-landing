@@ -133,13 +133,13 @@ header {
   font-family: var(--font-heading);
   font-size: 42px;
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 .hero-subtitle {
   color: var(--color-accent);
   font-size: 22px;
   display: block;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 .hero-description {
   color: var(--color-muted);
