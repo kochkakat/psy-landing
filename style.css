@@ -139,7 +139,7 @@ header {
   color: var(--color-accent);
   font-size: 22px;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 .hero-description {
   color: var(--color-muted);
