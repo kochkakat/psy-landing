@@ -174,6 +174,13 @@ header {
   font-size: 36px;
   margin-bottom: 8px;
 }
+/* Новое: только для контактов (компактный заголовок) */
+.contacts-section-title {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 
 /* Features */
 .features-grid {
@@ -258,7 +265,10 @@ header {
 }
 .location-block {
   margin-top: 50px;      /* ← это добавит воздух сверху блока с адресом */
-  margin-bottom: 40px;  /* ← твой старый отступ снизу остаётся, ничего не ломается */
+  margin-bottom: 0;      /* снизу убираем, сетку выровняем через gap */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;            /* расстояние между заголовком, адресом и картой */
 }
 .location-text {
   color: var(--color-muted);
@@ -267,22 +277,26 @@ header {
 }
 .map-wrapper {
   width: 100%;
+  height: 360px;                    /* фиксированная высота */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(245, 158, 11, 0.12);
-  margin-bottom: 16px;
+  background-color: #eee;          /* цвет, если картинка ещё грузится */
+  margin-bottom: 0;                 /* отступ снизу убираем — есть gap */
 }
 .map-wrapper img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;               /* чтобы картинка заполняла блок без искажений */
   display: block;
 }
 
 /* Сетка: на больших экранах — 2 колонки, на мобильных — 1 колонка */
 .contacts-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;       /* две колонки на ПК */
-  gap: 40px;                             /* расстояние между картой и формой */
+  grid-template-columns: 1fr 1fr;   /* две равные колонки */
+  gap: 40px;                       /* расстояние между колонками */
+  align-items: start;              /* ВАЖНО: прижимает оба блока к верху своей ячейки */
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
