@@ -379,7 +379,6 @@ header {
   line-height: 1;
   margin-right: 8px;
   letter-spacing: 0.5px;
-  color: #ffffff; /* вот эта строчка делает букву белой */
 }
 
 .logo-text {
