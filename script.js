@@ -106,16 +106,24 @@ document.addEventListener('DOMContentLoaded', () => {
   if (year) year.textContent = new Date().getFullYear();
 
   // Hero
-  const heroTitle = document.querySelector('.hero-title > span:first-child');
-  const heroSubtitle = document.querySelector('.hero-subtitle');
-  const heroDesc = document.querySelector('.hero-description');
-  const badge = document.querySelector('.badge-accent');
-
-  if (heroTitle) heroTitle.textContent = siteData.hero.title;
-  if (heroSubtitle) heroSubtitle.textContent = siteData.hero.subtitle;
-  if (heroDesc) heroDesc.textContent = siteData.hero.description;
-  if (badge) badge.textContent = siteData.hero.badge;
-
+  const heroBadgeEl = document.getElementById('hero-badge');          // Используем ID для бейджа — это надёжнее
+  const heroTitleEl = document.querySelector('.hero-title');          // Просто .hero-title, без span
+  const heroSubtitleEl = document.querySelector('.hero-subtitle');  // Отдельный блок
+  const heroDescEl = document.querySelector('.hero-description');     // Отдельный блок
+  
+  const ctaMainBtn = document.querySelector('.hero-buttons .btn-primary');
+  const ctaSecondaryBtn = document.querySelector('.hero-buttons .btn-outline');
+  
+  // Заполняем тексты
+  if (heroBadgeEl) heroBadgeEl.textContent = siteData.hero.badge;
+  if (heroTitleEl) heroTitleEl.textContent = siteData.hero.title;
+  if (heroSubtitleEl) heroSubtitleEl.textContent = siteData.hero.subtitle;
+  if (heroDescEl) heroDescEl.textContent = siteData.hero.description;
+  
+  // Заполняем кнопки
+  if (ctaMainBtn) ctaMainBtn.textContent = siteData.hero.ctaMain;
+  if (ctaSecondaryBtn) ctaSecondaryBtn.textContent = siteData.hero.ctaSecondary;
+  
   // Features
   const featuresContainer = document.getElementById('features-container');
   if (featuresContainer) {
