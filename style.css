@@ -346,35 +346,58 @@ header {
 
 /* Оранжевый футер */
 .footer-orange {
-  background-color: #FF8C42; /* подбери любой оттенок оранжевого */
-  color: #ffffff;
-  padding: 48px 0 32px;
+  background-color: #FF8C42; /* тёплый оранжевый — можно поменять на любой свой */
+  color: #ffffff;            /* белый текст */
+  padding: 36px 0;            /* отступ сверху/снизу */
 }
 
 .footer-orange__inner {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 }
 
-.footer-orange__name {
+/* Левая часть: логотип + копирайт */
+.footer-orange__left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-mark {
   font-weight: 700;
   font-size: 20px;
-  margin: 0;
+  line-height: 1;
+  margin-right: 8px;
   letter-spacing: 0.5px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .footer-orange__copy {
   font-size: 14px;
   opacity: 0.9;
-  margin: 4px 0 0;
+  margin: 0;
 }
 
+/* Правая часть: меню */
 .footer-orange__nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 20px;
 }
 
 .footer-orange__nav a {
@@ -385,15 +408,25 @@ header {
 }
 
 .footer-orange__nav a:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
-/* Адаптив: на мобильном ссылки в одну колонку или в 2 строки */
+/* Адаптив: на мобильном — всё по центру, ссылки друг под другом */
 @media (max-width: 768px) {
   .footer-orange__inner {
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
+  .footer-orange__left {
+    align-items: center;
+  }
+  .footer-orange__nav {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
   .footer-orange__nav {
     justify-content: center;
   }
