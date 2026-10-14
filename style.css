@@ -291,7 +291,7 @@ header {
 }
 
 /* Точечный подъём заголовка формы — ровно на 24px вверх */
-.contact-form h3.contacts-section-title {
+.contact-form h3.section-title {
   margin-top: 12px;   /* поднимает-/опускает+ заголовок вверх внутри формы */
   margin-bottom: 12px; /* снизу оставляем аккуратный отступ */
 }
