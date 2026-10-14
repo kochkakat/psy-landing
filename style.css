@@ -250,7 +250,7 @@ header {
   justify-content: center;
 }
 .location-block {
-  margin-top: 36px;      /* ← это добавит воздух сверху блока с адресом */
+  margin-top: 50px;      /* ← это добавит воздух сверху блока с адресом */
   margin-bottom: 40px;  /* ← твой старый отступ снизу остаётся, ничего не ломается */
 }
 .location-text {
