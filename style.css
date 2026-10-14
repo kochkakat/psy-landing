@@ -331,25 +331,29 @@ header {
   transition: background 0.2s;
 }
 
-/* Усиляем заголовок в оранжевом поле */
+/* Крупный акцент: «Коучинг · Метафоры · Астросимволизм» */
 .hero-specialties {
-  font-size: 24px;           /* Размер шрифта (можно поставить 26px, если хочется ещё крупнее) */
-  line-height: 1.2;         /* Плотный межстрочный интервал, чтобы не разъезжалось */
-  font-weight: 700;         /* Жирный, чтобы выделялся */
-  text-transform: none;      /* Без капса, если у тебя сейчас не капс */
+  font-size: 26px;           /* Крупнее, чем остальной текст */
+  line-height: 1.2;
+  font-weight: 700;          /* Жирный */
+  color: var(--color-text);  /* Используем твой тёмно‑коричневый из :root — он мягче белого и лучше с оранжевым */
+  margin: 0 0 20px 0;        /* Отступ снизу, чтобы сдвинуть следующий блок ниже */
+  text-transform: none;
 }
 
-/* Отступы для описаний, чтобы они встали ниже */
-.hero-description-1 {
-  margin-top: 16px;
-  font-size: 18px;
-}
-.hero-description-2 {
-  margin-top: 8px;
-  font-size: 16px;
-  color: #444;               /* Чуть темнее, чтобы читалось, но не доминировало */
+/* Основной слоган: «Помогаю разобраться в себе и найти опору» */
+.hero-main-tagline {
+  font-size: 22px;           /* Читаемый размер */
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 12px 0;        /* Небольшой отступ вниз после слогана */
 }
 
-.contact-form button:hover {
-  background-color: #d98b00;
+/* Перечень подходов: «Игры, гипноз, МАК…» */
+.hero-approaches {
+  font-size: 16px;           /* Чуть мельче — как пояснение */
+  line-height: 1.4;
+  color: var(--color-muted); /* Используем приглушённый коричневый — он уже есть в твоей палитре */
+  margin: 0;
 }
