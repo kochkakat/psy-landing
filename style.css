@@ -331,6 +331,25 @@ header {
   transition: background 0.2s;
 }
 
+/* Усиляем заголовок в оранжевом поле */
+.hero-specialties {
+  font-size: 24px;           /* Размер шрифта (можно поставить 26px, если хочется ещё крупнее) */
+  line-height: 1.2;         /* Плотный межстрочный интервал, чтобы не разъезжалось */
+  font-weight: 700;         /* Жирный, чтобы выделялся */
+  text-transform: none;      /* Без капса, если у тебя сейчас не капс */
+}
+
+/* Отступы для описаний, чтобы они встали ниже */
+.hero-description-1 {
+  margin-top: 16px;
+  font-size: 18px;
+}
+.hero-description-2 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #444;               /* Чуть темнее, чтобы читалось, но не доминировало */
+}
+
 .contact-form button:hover {
   background-color: #d98b00;
 }
