@@ -10,9 +10,7 @@ const siteData = {
   // Hero секция (первый экран)
   hero: {
     badge: "Коучинг · Психология · Метафора",
-    title: ["Помогаю обрести ресурс и опору,",
-    "найти решение и разобраться в себе",
-    "через эффективные практики и стратегии работы с мышлением"],
+    title: "Помогаю обрести ресурс и опору,<br>найти решение и разобраться в себе<br>через эффективные практики и стратегии работы с мышлением",/* строка с <br> и потому внизу поменяли строчку на if (heroTitleEl) heroTitleEl.innerHTML = siteData.hero.title;. */
     subtitle: "Интегративные техники, Игры, МАК, Гипноз и Астросимволизм — подбираю подход под ваш запрос",
     description: "Работаю с тревогой, выгоранием, поиском направления и внутренними барьерами. Использую коучинговый подход и глубинные методы: гипноз, регрессию, метафорические инструменты.",
     ctaMain: "Начать работу",
@@ -119,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Заполняем тексты
   if (heroBadgeEl) heroBadgeEl.textContent = siteData.hero.badge;
   if (heroTitleEl) heroTitleEl.textContent = siteData.hero.title;
-  if (heroSubtitleEl) heroSubtitleEl.textContent = siteData.hero.subtitle;
+  if (heroTitleEl) heroTitleEl.innerHTML = siteData.hero.title;
   if (heroDescEl) heroDescEl.textContent = siteData.hero.description;
   
   // Заполняем кнопки
