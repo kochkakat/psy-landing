@@ -321,7 +321,7 @@ header {
     gap: 24px;                          /* чуть меньше отступ между блоками */
   }
 }
-}
+
 
 /* Делаем форму аккуратным «квадратиком» */
 .contact-form {
@@ -335,7 +335,6 @@ header {
 
 .form-group {
   margin-bottom: 18px;
-  margin-top: 48px !important;
 }
 
 .form-group label {
