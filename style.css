@@ -321,7 +321,7 @@ header {
 /* Делаем форму аккуратным «квадратиком» */
 .contact-form {
   background: #fff;
-  padding: 8px 32px;
+  padding: 24px 32px;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(245, 158, 11, 0.1);
   border: 1px solid rgba(245, 158, 11, 0.15);
@@ -340,7 +340,8 @@ header {
   color: var(--color-muted, #555);
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 12px 14px;
   border: 1px solid #ddd;
@@ -349,7 +350,8 @@ header {
   transition: border-color 0.2s;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group select:focus{
   outline: none;
   border-color: #f59e0b; /* оранжевый акцент при клике */
 }
