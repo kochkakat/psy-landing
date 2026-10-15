@@ -325,14 +325,10 @@ header {
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(245, 158, 11, 0.1);
   border: 1px solid rgba(245, 158, 11, 0.15);
-  margin-top: 24px !important;
+  margin-top: 36px !important;
+  margin-bottom: 36px;   
 }
  
-/*Убираем нижний отступ у последнего поля (это уберёт «выталкивание» вниз) */
-.contact-form .form-group:last-child {
-  margin-bottom: 0;
-}
-
 .form-group {
   margin-bottom: 18px;
 }
