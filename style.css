@@ -150,7 +150,7 @@ header {
 }
 .hero-description {
   color: var(--color-muted);
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 }
 .hero-buttons {
   display: flex;
