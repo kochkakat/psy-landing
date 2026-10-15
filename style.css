@@ -257,6 +257,21 @@ header {
   text-align: left;
   border-bottom: 1px solid var(--color-border);
 }
+/* Только на телефонах: ширина таблицы будет не шире экрана */
+@media (max-width: 767px) {
+  .pricing-table th,
+  .pricing-table td {
+    padding: 8px 12px;       /* меньше отступы */
+    font-size: 14px;         /* чуть меньше шрифт */
+    white-space: normal;     /* разрешаем перенос строк */
+  }
+
+  .pricing-table th:first-child,
+  .pricing-table td:first-child {
+    /* можно сделать первую колонку чуть важнее, если нужно */
+    font-weight: 600;
+  }
+}
 
 /* Process */
 .process-steps {
