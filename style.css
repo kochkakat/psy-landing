@@ -295,6 +295,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr; /* две равные колонки */
   gap: 40px; /* расстояние между картой и формой */
+  align-items: start;  /*  прижимает форму к верху и не тянет её вниз */
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
