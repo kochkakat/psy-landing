@@ -395,7 +395,9 @@ header {
 
 .contact-form button {
   width: 100%;
-  padding: 16px;
+  padding-top: 24px;    /* воздух сверху */
+  padding-bottom: 20px; /* воздух снизу */
+  /* padding-left/right не задаём — они останутся по умолчанию, а ширина 100% всё равно растянет кнопку */
   background-color: #f59e0b;
   color: #fff;
   border: none;
