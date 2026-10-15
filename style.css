@@ -321,7 +321,10 @@ header {
 /* Делаем форму аккуратным «квадратиком» */
 .contact-form {
   background: #fff;
-  padding: 24px 32px;
+  padding-top: 24px;               /* верх оставляем плотным */
+  padding-right: 32px;
+  padding-bottom: 36px;           /* ← тут меняй 24 на 20, 28 и т.д., пока не понравится */
+  padding-left: 32px;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(245, 158, 11, 0.1);
   border: 1px solid rgba(245, 158, 11, 0.15);
