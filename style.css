@@ -165,23 +165,8 @@ header {
 }
 /* Только на телефоне шапка не должна наезжать на бейдж */
 @media (max-width: 767px) {
-  .phone-link,
-  .btn-primary {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  .header-actions {
-    gap: 8px;
-  }
-
-  .nav-menu a {
-    margin-left: 8px;
-    font-size: 13px;
-  }
-
   .badge {
-    margin-top: 24px;
+    margin-top: 36px;
   }
 }
 
