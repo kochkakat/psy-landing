@@ -331,6 +331,12 @@ header {
   margin-top: 0px !important;
   margin-bottom: 0px;   
 }
+/* Отступ формы только на ПК */
+@media (min-width: 768px) {
+  .contact-form {
+    margin-top: 24px;
+  }
+}
  
 .form-group {
   margin-bottom: 18px;
