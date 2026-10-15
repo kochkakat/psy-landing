@@ -163,6 +163,11 @@ header {
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
 }
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 40px; /* было 80px, уменьшаем до 40–50px — подбери, чтобы стало ровно */
+  }
+}
 
 /* Sections */
 .section-header {
