@@ -403,7 +403,7 @@ header {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
-  margin-top: 22px;   /* ← это воздух перед кнопкой */
+  margin-top: 20px;   /* ← это воздух перед кнопкой */
 }
 
 /* Оранжевый футер */
