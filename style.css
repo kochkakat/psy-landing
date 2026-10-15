@@ -367,7 +367,7 @@ header {
 }
  
 .form-group {
-  margin-bottom: 23px;  /* это число задаёт расстояние между строками формы */
+  margin-bottom: 22px;  /* это число задаёт расстояние между строками формы */
 }
 
 .form-group label {
