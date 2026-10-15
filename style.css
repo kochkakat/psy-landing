@@ -326,6 +326,11 @@ header {
   border: 1px solid rgba(245, 158, 11, 0.15);
   margin-top: 24px !important;
 }
+ 
+/*Убираем нижний отступ у последнего поля (это уберёт «выталкивание» вниз) */
+.contact-form .form-group:last-child {
+  margin-bottom: 0;
+}
 
 .form-group {
   margin-bottom: 18px;
